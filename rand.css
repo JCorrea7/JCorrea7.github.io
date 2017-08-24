@@ -11,16 +11,19 @@ body {
 
   height: 100vh;
 
-  font-family: monospace;
-  background-color: lightblue;
+  font-family: verdana;
+  background-color: grey;
   text-align: center;
 }
 
 button {
   font-size: 24px;
-  font-family: monospace;
+  font-family: verdana;
 }
 
 img {
   max-width: 60%;
+}
+ul {
+  list-style: none;
 }
