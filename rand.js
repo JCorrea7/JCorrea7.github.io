@@ -22,7 +22,6 @@ var students = [
   "Shonica",
   "Krystal"
   
-  text-align: center;
 ];
 
 var colors = [
