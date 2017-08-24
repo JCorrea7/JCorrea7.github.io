@@ -11,14 +11,14 @@ body {
 
   height: 100vh;
 
-  font-family: verdana;
-  background-color: lightgrey;
+  font-family: gothic;
+  background-color: grey;
   text-align: center;
 }
 
 button {
   font-size: 24px;
-  font-family: verdana;
+  font-family: gothic;
 }
 
 img {
