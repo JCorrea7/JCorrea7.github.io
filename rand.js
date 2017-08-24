@@ -26,10 +26,10 @@ var students = [
 
 var colors = [
   'neongreen',
-  'white',
-  'fuchsia', 0,
+  'white', 0,
+  'fuchsia',
   'yellow', 0,
-  'black'
+  'black', 0
 ];
 var cur = 0;
 
