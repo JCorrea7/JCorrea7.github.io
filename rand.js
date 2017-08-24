@@ -21,6 +21,8 @@ var students = [
   "John",
   "Shonica",
   "Krystal"
+  
+  text-align: center;
 ];
 
 var colors = [
