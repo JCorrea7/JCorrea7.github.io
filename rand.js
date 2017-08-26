@@ -77,7 +77,8 @@ var pickOnClick = function (event) {
   "John",
   "Shonica",
   "Krystal"
- (
+ (;  
+  
 document.getElementById('tot1').innerHTML = getStudent(students);
 document.getElementById('tot2').innerHTML = getStudent(students);
 document.getElementById('tot3').innerHTML = getStudent(students);
