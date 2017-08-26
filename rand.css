@@ -11,14 +11,14 @@ body {
 
   height: 100vh;
 
-  font-family: gothicscript;
+  font-family: cursive;
   background-color: grey;
   text-align: center;
 }
 
 button {
   font-size: 24px;
-  font-family: gothicscript;
+  font-family: cursive;
 }
 
 img {
