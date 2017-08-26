@@ -59,29 +59,7 @@ var pickOnClick = function (event) {
   var myStudent = students.splice(random, 1);
   return myStudent;
 });
-  
-  var students = new Array(
-  "Kevin",
-  "Jonathan",
-  "Angel",
-  "Eric",
-  "Janette",
-  "Desmond",
-  "Ashiya",
-  "Monica",
-  "Susana",
-  "Deborah",
-  "Thomas",
-  "Julissa",
-  "Kyla",
-  "John",
-  "Shonica",
-  "Krystal"
- (;  
-  
-document.getElementById('tot1').innerHTML = getStudent(students);
-document.getElementById('tot2').innerHTML = getStudent(students);
-document.getElementById('tot3').innerHTML = getStudent(students);
+ 
 
   var x = window.setInterval(() => {
     if (colors[cur] === undefined) {
