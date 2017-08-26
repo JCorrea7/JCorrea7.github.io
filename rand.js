@@ -54,10 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 var pickOnClick = function (event) {
   choice.innerHTML = '&nbsp;'
-  function getStudent(students){
   var rand = students[Math.floor(Math.random() * students.length)];
   var myStudent = students.splice(random, 1);
-  return myStudent;
+
 });
  
 
