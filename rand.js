@@ -5,24 +5,24 @@ var choice;
 var aList;
 
 var students = [
-  "Kevin",
-  "Jonathan",
-  "Angel",
-  "Eric",
-  "Janette",
-  "Desmond",
-  "Ashiya",
-  "Monica",
-  "Susana",
-  "Deborah",
-  "Thomas",
-  "Julissa",
-  "Kyla",
-  "John",
-  "Shonica",
-  "Krystal"
-  
+ ["Kevin", false],
+ ["Jonathan", false],
+ ["Angel", false],
+ ["Eric", false],
+ ["Janette", false],
+ ["Desmond", false],
+ ["Ashiya", false],
+ ["Monica", false],
+ ["Susana", false],
+ ["Deborah", false],
+ ["Thomas", false],
+ ["Julissa", false],
+ ["Kyla", false],
+ ["John", false],
+ ["Shonica", false],
+ ["Krystal", false]
 ];
+
 var colors = [
   'neongreen',
   'white', 0,
@@ -31,6 +31,7 @@ var colors = [
   'purple', 0
 ];
 var cur = 0;
+var studentCount = students.length;
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('hello rand.js');
@@ -55,16 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
 var pickOnClick = function (event) {
   choice.innerHTML = '&nbsp;'
   var rand = students[Math.floor(Math.random() * students.length)];
-  var myStudent = students.splice(random, 1);
-
-});
- 
-
   var x = window.setInterval(() => {
-    if (colors[cur] === undefined) {
-      window.clearInterval(x);
-      cur = 0;
-      choice.innerText = rand;
+    window.clearInterval(x);
+    cur = 0;
+    if(!rand[1])
+  }
+      choice.innerText = rand[0];
+      rand[1] = true;
+      studentCount--;
+  }
+   if(studentCount <= 0)
+  choice.innerText = "All Students Picked!";
       return;
     }
     if (colors[cur]) header.style.color = colors[cur];
@@ -73,8 +75,13 @@ var pickOnClick = function (event) {
   }, 200);
 }
 
+var removeClicked = function(studentName)
+   {
+     let student =students.find(s =>
+
 var aListOnClick = function (event) {
   if (event.target.tagName === 'LI') {
     event.target.style.textDecoration = 'line-through';
+    removeClicked(event.target.innerText);
   }
 }
